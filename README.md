@@ -1,7 +1,7 @@
 # Aplicacion de Notas
 
 ##  Descripción  
-**ToDo Notes App** es una aplicación web que permite crear, guardar y gestionar tareas y notas de forma sencilla. Cada usuario inicia sesión con un PIN de 4 dígitos, que actúa como clave para su espacio personal en **Firebase Firestore**. Incluye:
+**Aplicacion de notas** es una aplicación web que permite crear, guardar y gestionar tareas y notas de forma sencilla. Cada usuario inicia sesión con un PIN de 4 dígitos, que actúa como clave para su espacio personal en **Firebase Firestore**. Incluye:
 
 - Interfaz responsive (móvil y escritorio)  
 - Modo claro/oscuro  
