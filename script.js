@@ -522,37 +522,37 @@ $(".nic1-2").on("click", function(){
 
 $(".nehc1--input-A").on("focus focusin", function(){
     $(this).css({
-        color: "#4a70f9",
-        background: "#ffffff",
-        border: "2px solid #ffffff"
+        color: "#333333",
+        background: "#efe2d0",
+        border: "2px solid #efe2d0"
     });
 });
 
 $(".nehc1--input-A").on("blur focusout", function(){
     $(this).css({
-        color: "white",
-        background: "#5882fa",
-        border: "2px solid #5882fa"
+        color: "#333333",
+        background: "#f5f5dc",
+        border: "2px solid #f5f5dc"
     });
 });
 
 $(".nehc1--input-A--B").on("focus focusin", function(){
     $(this).css({
-        color: "#4a70f9"
+        color: "#333333"
     });
     $(".nehc1-B--BB").css({
-        background: "white",
-        border: "2px solid #ffffff"
+        background: "#efe2d0",
+        border: "2px solid #efe2d0"
     });
 });
 
 $(".nehc1--input-A--B").on("blur focusout", function(){
     $(this).css({
-        color: "white"
+        color: "#333333"
     });
     $(".nehc1-B--BB").css({
-        background: "#5882fa",
-        border: "2px solid #5882fa"
+        background: "#f5f5dc",
+        border: "2px solid #f5f5dc"
     });
 });
 
@@ -810,37 +810,37 @@ $(".th2-C").on("click", function(){
 
 $(".nehc1--input-A__B").on("focus focusin", function(){
     $(this).css({
-        color: "#4a70f9",
-        background: "#ffffff",
-        border: "2px solid #ffffff"
+        color: "#333333",
+        background: "#efe2d0",
+        border: "2px solid #efe2d0"
     });
 });
 
 $(".nehc1--input-A__B").on("blur focusout", function(){
     $(this).css({
-        color: "white",
-        background: "#5882fa",
-        border: "2px solid #5882fa"
+        color: "#333333",
+        background: "#f5f5dc",
+        border: "2px solid #f5f5dc"
     });
 });
 
 $(".nehc1--input-A--B__B").on("focus focusin", function(){
     $(this).css({
-        color: "#4a70f9"
+        color: "#333333"
     });
     $(".nehc1-B--BB__B").css({
-        background: "white",
-        border: "2px solid #ffffff"
+        background: "#efe2d0",
+        border: "2px solid #efe2d0"
     });
 });
 
 $(".nehc1--input-A--B__B").on("blur focusout", function(){
     $(this).css({
-        color: "white"
+        color: "#333333"
     });
     $(".nehc1-B--BB__B").css({
-        background: "#5882fa",
-        border: "2px solid #5882fa"
+        background: "#f5f5dc",
+        border: "2px solid #f5f5dc"
     });
 });
 
