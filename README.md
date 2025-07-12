@@ -49,19 +49,19 @@
    git clone https://github.com/TU_USUARIO/Aplicaci-n-de-Listas.git
    cd Aplicacion-de-Listas
    ```
-# Configura Firebase
+##  Configura Firebase
 
 - Crea un proyecto y app web en Firebase Console.
 - Habilita Cloud Firestore en modo "test".
 - Copia tu bloque `firebaseConfig` en `script.js` (reemplaza los `"<-->"`).
 
-# Abre la app
+## Abre la app
 
 No hace falta servidor: abre `index.html` en tu navegador.
 
 Introduce un PIN de 4 dígitos y haz clic en **Continuar**.
 
-# Despliega (opcional)
+## Despliega (opcional)
 
 Puedes usar GitHub Pages, Netlify o Vercel:
 
