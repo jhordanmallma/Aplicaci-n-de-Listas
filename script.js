@@ -1,11 +1,3 @@
-/* 
-Since Im sharing the code, 
-you have full access to the function....
-but please dont spam with the live version
-rest is your choice ^_^
-*/
-
-// Firebase Management
 
 var firebaseConfig = {
 
@@ -24,25 +16,11 @@ const db = firebase.firestore();
 
 db.settings({ timestampsInSnapshots: true });
 
-// db.collection("cafes").get().then((snapshot) => {
 
-//     snapshot.docs.forEach((doc) => {
-//         console.log(doc.data());
-//     });
-    
-
-// });
-
-// Web Script
-
-// Declaring variables
 
 var documentData;
 var currentCode;
 
-// Etc
-
-// $(".section-2-container").addClass("s2c-start");
 
 $("#loadingCode").hide();
 $(".notes-pre").show();
@@ -61,7 +39,6 @@ $("#cutCodeBtn").on("click", function(){
     $(".s-1-circle-A").removeClass("proc-c-2");
 });
 
-// Dynamic Styles
 
 $("#superbody").css({"min-height": $(document).height() + "px"});
 $(".notes-edit notes-edit-open").css({"min-height": $(document).height() - 50 + "px"});
@@ -82,7 +59,7 @@ $("#codeInput1").on("input", function(e){
     
 });
 
-// Manage tasks
+// tasks
 
 var completeNewList = 2;
 

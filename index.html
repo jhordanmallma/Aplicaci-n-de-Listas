@@ -64,7 +64,8 @@
             </div>
             <div class="nav-2 ripple" ripple-press-expand-time="1" ripple-release-expand-time="0.5">
                 <div class="nva-2-plus">
-                    <ion-icon class="nav-icons" name="add"></ion-icon>
+                    <!-- Icono de Añadir cambiado: add → add-circle-outline -->
+                    <ion-icon class="nav-icons" name="add-circle-outline"></ion-icon>
                 </div>
             </div>
         </div>
@@ -78,7 +79,8 @@
                     <input id="nameInputTxt" type="text" value="Invitado" placeholder="Nombre" maxlength="20" autocomplete="off" spellCheck="false"> <!-- Traducido -->
                 </div>
                 <div class="s2h1----C">
-                    <ion-icon name="pencil"></ion-icon>
+                    <!-- Icono de Editar cambiado: pencil → pencil-outline -->
+                    <ion-icon name="pencil-outline"></ion-icon>
                 </div>
             </div>
             <div class="s-2-date-1">
@@ -90,7 +92,8 @@
                 <div class="note-box-1-B">
                     <div class="note-icon-c-1">
                         <div class="note-icon-1">
-                            <ion-icon name="create-outline"></ion-icon>
+                            <!-- Icono de Nota Especial cambiado: create-outline → bookmarks-outline -->
+                            <ion-icon name="bookmarks-outline"></ion-icon>
                         </div>
                     </div>
                 </div>
@@ -109,7 +112,8 @@
                     <div class="note-box-1">
                         <div class="note-icon-c-1">
                             <div class="note-icon-1">
-                                <ion-icon name="clipboard-outline"></ion-icon>
+                                <!-- Icono de Nota cambiado: clipboard-outline → bookmarks-outline -->
+                                <ion-icon name="bookmarks-outline"></ion-icon>
                             </div>
                         </div>
                         <div class="note-circle-1"></div>
@@ -124,10 +128,12 @@
                         </div>
                         <div class="note-icon-con-1">
                             <div class="nic1-1">
-                                <ion-icon name="create-outline"></ion-icon>
+                                <!-- Icono de Editar cambiado: create-outline → pencil-outline -->
+                                <ion-icon name="pencil-outline"></ion-icon>
                             </div>
                             <div class="nic1-2">
-                                <ion-icon name="trash-outline"></ion-icon>
+                                <!-- Icono de Eliminar cambiado: trash-outline → trash-bin-outline -->
+                                <ion-icon name="trash-bin-outline"></ion-icon>
                             </div>
                         </div>
                     </div>
@@ -191,7 +197,8 @@
                 </div>
                 <div class="th2">
                     <div class="th2-B ripple" ripple-press-expand-time="1" ripple-release-expand-time="0.5">
-                        <ion-icon name="trash-outline"></ion-icon>
+                        <!-- Icono de Eliminar Todas cambiado: trash-outline → trash-bin-outline -->
+                        <ion-icon name="trash-bin-outline"></ion-icon>
                     </div>
                     <div class="th2-C ripple" ripple-press-expand-time="1" ripple-release-expand-time="0.5">
                         Añadir Tarea 
@@ -267,13 +274,19 @@
     <div class="splash-screen">
         <div class="splash-container">
             <span class="splash-icon">
-                <svg viewBox="-25 0 500 500">
-                <path d="M100,50h-50a50,50 0 00-50,50v350a50,50 0 00 50,50h350a50,50 0 00 50-50v-350a50,50 0 00-50-50h-50v25h50a25,25 0 01 25,25v350a25,25 0 01-25,25h-350a25,25 0 01-25-25v-350a25,25 0 01 25-25h50z" />
-                <path d="M150,50 L300,50 L300,75 L150,75 Z" />
-                <rect x="110" y="0" width="30" height="150" />
-                <rect x="310" y="0" width="30" height="150" />
-                <rect x="25" y="225" width="400" height="25" />
+                <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="250" cy="250" r="220" fill="#f5f5dc" opacity="0.3"/>
+                <rect x="150" y="150" width="200" height="200" rx="10" fill="#f8f4e8" stroke="#d2b48c" stroke-width="8"/>
+                <rect x="330" y="150" width="20" height="200" fill="#d2b48c" rx="5"/>
+                <line x1="170" y1="200" x2="320" y2="200" stroke="#a09080" stroke-width="4"/>
+                <line x1="170" y1="250" x2="320" y2="250" stroke="#a09080" stroke-width="4"/>
+                <line x1="170" y1="300" x2="320" y2="300" stroke="#a09080" stroke-width="4"/>
+                <path d="M190 190 L210 220 L240 180" fill="none" stroke="#8b4513" stroke-width="6" stroke-linecap="round"/>
+                <circle cx="190" cy="240" r="8" fill="none" stroke="#d2b48c" stroke-width="4"/>
+                <path d="M190 290 L210 320" fill="none" stroke="#a09080" stroke-width="4" stroke-linecap="round"/>
+                <path d="M250 380 C280 360 320 370 330 350" fill="none" stroke="#d2b48c" stroke-width="4" stroke-dasharray="10,5"/>
                 </svg>
+                
             </span>
             <div class="splash-heading">
                 App de Tareas 
