@@ -927,3 +927,59 @@ $("#addTaskBtn2").on("click", function(){
 $(".nav-2").on("click", function(){
     $(".th2-C").click();
 });
+
+$(document).ready(function() {
+            // Función para filtrar contenido
+            function filterContent(searchTerm) {
+                searchTerm = searchTerm.toLowerCase().trim();
+                let hasResults = false;
+                
+                // 1. Filtrar notas
+                if ($(".notes-container").is(":visible")) {
+                    const noteHeading = $(".note-heading-1").text().toLowerCase();
+                    const noteContent = $(".note-subhead-1").text().toLowerCase();
+                    
+                    if (noteHeading.includes(searchTerm) || noteContent.includes(searchTerm)) {
+                        $(".notes-container").show();
+                        hasResults = true;
+                    } else {
+                        $(".notes-container").hide();
+                    }
+                }
+                
+                // 2. Filtrar tareas
+                $(".tasks-container > div").each(function() {
+                    const task = $(this);
+                    const taskHeading = task.find(".task-heading-1").text().toLowerCase();
+                    const taskContent = task.find(".task-sub-1").text().toLowerCase();
+                    
+                    if (taskHeading.includes(searchTerm) || taskContent.includes(searchTerm)) {
+                        task.show();
+                        hasResults = true;
+                    } else {
+                        task.hide();
+                    }
+                });
+                
+                // 3. Mostrar mensaje si no hay resultados
+                if (searchTerm && !hasResults) {
+                    $("#noResultsMessage").show();
+                } else {
+                    $("#noResultsMessage").hide();
+                }
+            }
+            
+            // Evento de búsqueda en tiempo real
+            $("#searchInput").on("input", function() {
+                filterContent($(this).val());
+            });
+            
+            // Restaurar todo al borrar la búsqueda
+            $("#searchInput").on("keyup", function(e) {
+                if (e.key === "Escape" || $(this).val() === "") {
+                    $(this).val("");
+                    $(".notes-container, .tasks-container > div").show();
+                    $("#noResultsMessage").hide();
+                }
+            });
+        });

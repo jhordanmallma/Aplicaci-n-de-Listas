@@ -1218,6 +1218,80 @@ scrollbar-width: none;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }
+/* Barra de búsqueda mejorada - Elegante y moderna */
+.search-container {
+    padding: 10px 20px;
+    margin: 0 20px 15px;
+    border-radius: 12px;
+    background: transparent; /* Fondo transparente para mejor integración */
+    box-shadow: none; /* Eliminamos la sombra exterior */
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.95); /* Fondo blanco con ligera transparencia */
+    border-radius: 24px;
+    padding: 0 18px;
+    border: 1px solid rgba(210, 180, 140, 0.4); /* Borde más sutil */
+    transition: all 0.3s ease;
+    height: 46px; /* Altura reducida */
+    box-shadow: 
+        0 2px 6px rgba(210, 180, 140, 0.1),
+        inset 0 1px 2px rgba(255, 255, 255, 0.7); /* Sombra interior para efecto de profundidad */
+}
+
+.search-box:hover {
+    border-color: rgba(210, 180, 140, 0.7);
+    box-shadow: 
+        0 4px 10px rgba(210, 180, 140, 0.15),
+        inset 0 1px 2px rgba(255, 255, 255, 0.7);
+    transform: translateY(-1px); /* Efecto de elevación sutil */
+}
+
+.search-box:focus-within {
+    border-color: #b69b7c;
+    box-shadow: 
+        0 4px 12px rgba(182, 155, 124, 0.2),
+        inset 0 1px 2px rgba(255, 255, 255, 0.7);
+}
+
+#searchInput {
+    flex: 1;
+    padding: 10px 12px; /* Padding reducido verticalmente */
+    border: none;
+    background: transparent;
+    font-size: 15px; /* Tamaño de fuente ligeramente reducido */
+    outline: none;
+    color: #5a4c3a;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+}
+
+#searchInput::placeholder {
+    color: #a09080;
+    font-weight: 300;
+    letter-spacing: 0.1px;
+}
+
+.search-box ion-icon {
+    color: #a09080;
+    font-size: 18px; /* Tamaño de icono reducido */
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.search-box:focus-within ion-icon {
+    color: #b69b7c;
+    transform: scale(1.05); /* Efecto sutil de zoom al enfocar */
+}
+
+.no-results {
+    text-align: center;
+    padding: 20px;
+    color: #a09080;
+    font-style: italic;
+    font-size: 15px;
+}
 
 @keyframes splashHeaderAnimation{
     from {

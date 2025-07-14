@@ -86,6 +86,15 @@
             <div class="s-2-date-1">
                 20 Nov 2020
             </div>
+            <!-- Nueva barra de búsqueda -->
+            <div class="search-container">
+                <div class="search-box">
+                    <ion-icon name="search-outline"></ion-icon>
+                    <input type="text" id="searchInput" placeholder="Buscar tareas y notas...">
+                </div>
+            </div>
+
+           
 
             <div class="notes-pre ripple"  ripple-press-expand-time="1" ripple-release-expand-time="0.5">
 
@@ -212,7 +221,10 @@
                 
 
             </div>
-            
+            <div class="no-results" id="noResultsMessage" style="display: none;">
+                No se encontraron resultados para tu búsqueda
+            </div>
+             
         </div>
 
     </div>

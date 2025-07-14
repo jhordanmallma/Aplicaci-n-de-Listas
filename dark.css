@@ -1124,7 +1124,80 @@ scrollbar-width: none;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }
+/* ===== BARRA DE BÚSQUEDA - MODO OSCURO ===== */
+.search-container {
+    padding: 10px 20px;
+    margin: 0 20px 15px;
+    border-radius: 12px;
+    background: transparent; /* Fondo transparente para integración perfecta */
+    box-shadow: none;
+}
 
+.search-box {
+    display: flex;
+    align-items: center;
+    background: rgba(40, 40, 40, 0.95); /* Fondo gris oscuro con transparencia */
+    border-radius: 24px;
+    padding: 0 18px;
+    border: 1px solid rgba(120, 100, 80, 0.4); /* Borde en tonos tierra oscuros */
+    transition: all 0.3s ease;
+    height: 46px;
+    box-shadow: 
+        0 2px 6px rgba(0, 0, 0, 0.3),
+        inset 0 1px 2px rgba(255, 255, 255, 0.05); /* Sombras para profundidad */
+}
+
+.search-box:hover {
+    border-color: rgba(150, 130, 110, 0.7);
+    box-shadow: 
+        0 4px 10px rgba(0, 0, 0, 0.4),
+        inset 0 1px 2px rgba(255, 255, 255, 0.08);
+    transform: translateY(-1px);
+}
+
+.search-box:focus-within {
+    border-color: #9e8c72; /* Color beige para el enfoque */
+    box-shadow: 
+        0 4px 12px rgba(0, 0, 0, 0.5),
+        inset 0 1px 2px rgba(255, 255, 255, 0.1);
+}
+
+#searchInput {
+    flex: 1;
+    padding: 10px 12px;
+    border: none;
+    background: transparent;
+    font-size: 15px;
+    outline: none;
+    color: #e0e0e0; /* Texto claro */
+    letter-spacing: 0.2px;
+    font-weight: 400;
+}
+
+#searchInput::placeholder {
+    color: #8a8377; /* Placeholder en gris tierra */
+    font-weight: 300;
+    letter-spacing: 0.1px;
+}
+
+.search-box ion-icon {
+    color: #8a8377; /* Icono en tono medio */
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.search-box:focus-within ion-icon {
+    color: #b69b7c; /* Color dorado al enfocar */
+    transform: scale(1.05);
+}
+
+.no-results {
+    text-align: center;
+    padding: 20px;
+    color: #8a8377; /* Texto en gris tierra */
+    font-style: italic;
+    font-size: 15px;
+}
 @keyframes splashHeaderAnimation{
     from {
         opacity: 0;
